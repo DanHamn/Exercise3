@@ -9,8 +9,8 @@ namespace exercise3_4
 /*      F: Varför är polymorfism viktigt att behärska?
                 S: För att redusera upprepande kod.
         F: Hur kan polymorfism förändra och förbättra kod via en bra struktur?
-                S: Det gör det enkelt att se likheterna och skillnaderna mellan olika klasser och
-                se vad som är beroende av vad.
+                S: Det gör det enkelt att definiera det minst behövliga för en klass så att alla 
+                underklasser kan hanteras i stort på samma sätt.
         F: Vad är det för en skillnad på en Abstrakt klass och ett Interface?
                 En abstrakt klass visar både på vad alla subklasser minst kommer behöva som input och 
                 vilka metoder som subklasserna kan override.
