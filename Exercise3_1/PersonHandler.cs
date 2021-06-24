@@ -4,7 +4,7 @@ namespace Exercise3_1
 {
     internal class PersonHandler
     {
-        public Person CreatePerson(int age, string fName, string lName, int height, int weight)
+        public Person CreatePerson(int age, string fName, string lName, double height, double weight)
         {
             Person person = new();
             SetAge(person, age);
@@ -54,7 +54,7 @@ namespace Exercise3_1
                 SetLName(pers, Console.ReadLine());
             }
         }
-        public void SetHeight(Person pers, int height)
+        public void SetHeight(Person pers, double height)
         {
             try
             {
@@ -64,11 +64,11 @@ namespace Exercise3_1
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Try another input");
-                _ = int.TryParse(Console.ReadLine(), out int input);
+                _ = double.TryParse(Console.ReadLine(), out double input);
                 SetHeight(pers, input);
             }
         }
-        public void SetWeight(Person pers, int weight)
+        public void SetWeight(Person pers, double weight)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace Exercise3_1
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Try another input");
-                _ = int.TryParse(Console.ReadLine(), out int input);
+                _ = double.TryParse(Console.ReadLine(), out double input);
                 SetWeight(pers, input);
             }
         }
@@ -95,11 +95,11 @@ namespace Exercise3_1
         {
             return pers.LName;
         }
-        public int GetHeight(Person pers)
+        public double GetHeight(Person pers)
         {
             return pers.Height;
         }
-        public int GetWeight(Person pers)
+        public double GetWeight(Person pers)
         {
             return pers.Weight;
         }
@@ -107,23 +107,23 @@ namespace Exercise3_1
 
         public void WriteAge(Person pers)
         {
-            Console.WriteLine(pers.Age);
+            Console.WriteLine($"The persons age is {GetAge(pers)}");
         }
         public void WriteFName(Person pers)
         {
-            Console.WriteLine(pers.FName);
+            Console.WriteLine($"The persons first name is {GetFName(pers)}");
         }
         public void WriteLName(Person pers)
         {
-            Console.WriteLine(pers.LName);
+            Console.WriteLine($"The persons last name is {GetLName(pers)}");
         }
         public void WriteHeight(Person pers)
         {
-            Console.WriteLine(pers.Height);
+            Console.WriteLine($"The persons height is {GetHeight(pers)}");
         }
         public void WriteWeight(Person pers)
         {
-            Console.WriteLine(pers.Weight);
+            Console.WriteLine($"The persons wight is {GetWeight(pers)}");
         }
 
 

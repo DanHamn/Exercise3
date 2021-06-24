@@ -7,10 +7,10 @@ namespace Exercise3_1
         private int age;
         private string fName;
         private string lName;
-        private int height;
-        private int weight;
+        private double height;
+        private double weight;
         public Person() { }
-        public Person(int _age, string _fName, string _lName, int _height, int _weight)
+        public Person(int _age, string _fName, string _lName, double _height, double _weight)
         {
             age = _age;
             fName = _fName;
@@ -64,15 +64,29 @@ namespace Exercise3_1
                 lName = value;
             }
         }
-        public int Height
+        public double Height
         {
             get => height;
-            set => height = value;
+            set 
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException($"{nameof(height)} cannot be 0 or less");
+                }
+                height = value;
+            }
         }
-        public int Weight
+        public double Weight
         {
             get => weight;
-            set => weight = value;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException($"{nameof(weight)} cannot be 0 or less");
+                }
+                weight = value;
+            }
         }
     }
 }
