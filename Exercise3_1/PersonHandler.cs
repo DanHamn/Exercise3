@@ -83,45 +83,45 @@ namespace Exercise3_1
             }
         }
 
-        public int GetAge(Person pers)
+        public static int GetAge(Person pers)
         {
             return pers.Age;
         }
-        public string GetFName(Person pers)
+        public static string GetFName(Person pers)
         {
             return pers.FName;
         }
-        public string GetLName(Person pers)
+        public static string GetLName(Person pers)
         {
             return pers.LName;
         }
-        public double GetHeight(Person pers)
+        public static double GetHeight(Person pers)
         {
             return pers.Height;
         }
-        public double GetWeight(Person pers)
+        public static double GetWeight(Person pers)
         {
             return pers.Weight;
         }
 
 
-        public void WriteAge(Person pers)
+        public static void WriteAge(Person pers)
         {
             Console.WriteLine($"The persons age is {GetAge(pers)}");
         }
-        public void WriteFName(Person pers)
+        public static void WriteFName(Person pers)
         {
             Console.WriteLine($"The persons first name is {GetFName(pers)}");
         }
-        public void WriteLName(Person pers)
+        public static void WriteLName(Person pers)
         {
             Console.WriteLine($"The persons last name is {GetLName(pers)}");
         }
-        public void WriteHeight(Person pers)
+        public static void WriteHeight(Person pers)
         {
             Console.WriteLine($"The persons height is {GetHeight(pers)}");
         }
-        public void WriteWeight(Person pers)
+        public static void WriteWeight(Person pers)
         {
             Console.WriteLine($"The persons wight is {GetWeight(pers)}");
         }
