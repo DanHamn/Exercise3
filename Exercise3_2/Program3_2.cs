@@ -5,11 +5,11 @@ namespace Exercise3_2
     class Program3_2
     {
         /*F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut,
-     *   i vilken klass bör vi lägga det?
-     *   I subklasses "Bird"
-    F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
-         I subklassen "Animal"
-    */
+          i vilken klass bör vi lägga det?
+               I subklasses "Bird"
+          F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
+               I subklassen "Animal"
+        */
         static void Main()
         {
             Horse horse = new("Hela", 10, 500, "yes");
