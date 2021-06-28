@@ -15,11 +15,11 @@ namespace Exercise3_1
         {
             PersonHandler pers = new();
             Person person = pers.CreatePerson(age, fName, lName, height, weight);
-            pers.WriteAge(person);
-            pers.WriteFName(person);
-            pers.WriteLName(person);
-            pers.WriteHeight(person);
-            pers.WriteWeight(person);
+            PersonHandler.WriteAge(person);
+            PersonHandler.WriteFName(person);
+            PersonHandler.WriteLName(person);
+            PersonHandler.WriteHeight(person);
+            PersonHandler.WriteWeight(person);
         }
 
         private static void UserInput(out int age, out string fName, out string lName, out double height, out double weight)
@@ -52,6 +52,8 @@ namespace Exercise3_1
                 weightTest = Console.ReadLine();
             }
         }
+        // Nedanför är den första koden för undantagshantering.
+        // Den nuvarande koden är i "PersonHandler".
 
         //private static void NewAge(Person person, int age)
         //{

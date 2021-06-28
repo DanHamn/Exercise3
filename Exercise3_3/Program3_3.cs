@@ -6,14 +6,13 @@ namespace Exercise3_3
 {
     class Program3_3
     {
-        /*F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+        /* F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
                 S: För det finns inget i koden som kan konvertera mellan dem.
-        F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+           F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
                 S: Det mest basiska klassen, då man bara kan ta med bas klassen och alla dens subklasser.
-        F: Förklara vad det är som händer.
+           F: Förklara vad det är som händer.
                 S: I varje foreach loop checkar vi den mest specialicerade varianten av stats.
-        Kommer du åt den metoden från Animals listan?
-        F: Varför inte?
+           F: Kommer du åt den metoden från Animals listan? Varför inte?
                 S: Subklasser ärver från sina basklasser, basklasser kan inte ärva från sina subklasser
     */
         static void Main()
