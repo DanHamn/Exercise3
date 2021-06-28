@@ -4,6 +4,7 @@ namespace Exercise3_1
 {
     internal class PersonHandler
     {
+        //Skapar en "Person"
         public Person CreatePerson(int age, string fName, string lName, double height, double weight)
         {
             Person person = new();
@@ -14,6 +15,9 @@ namespace Exercise3_1
             SetWeight(person, weight);
             return person;
         }
+
+        //"Set..." koderna sätter dem olika värdena
+        //och hanterar ArgumentException från "Person" tills en korrekt input ges
         public void SetAge(Person pers, int age)
         {
             try
@@ -83,6 +87,7 @@ namespace Exercise3_1
             }
         }
 
+        //"Get..." koderna returnerar det specifika värdet
         public static int GetAge(Person pers)
         {
             return pers.Age;
@@ -104,7 +109,7 @@ namespace Exercise3_1
             return pers.Weight;
         }
 
-
+        //"Write..." koderna skriver ut värderna i konsolen med en text.
         public static void WriteAge(Person pers)
         {
             Console.WriteLine($"The persons age is {GetAge(pers)}");

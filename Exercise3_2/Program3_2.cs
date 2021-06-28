@@ -12,6 +12,8 @@ namespace Exercise3_2
     */
         static void Main()
         {
+            //Skapr olika "Animals" och ger dem lite olika stats.
+            //Ljudet (eller orden) som djuret gör skrivs ut i konsolen.
             Horse horse = new("Hela", 10, 500, "yes");
             horse.Dosound();
 

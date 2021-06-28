@@ -18,6 +18,7 @@ namespace Exercise3_1
             height = _height;
             weight = _weight;
         }
+        //De olika get/set metoderna och deras olika exceptions
         public int Age
         {
             get => age;
@@ -25,7 +26,7 @@ namespace Exercise3_1
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Age cannot be 0 or less");
+                    throw new ArgumentException("Age most be an integer and cannot be 0 or less");
                 }
                 age = value;
             }
@@ -71,7 +72,7 @@ namespace Exercise3_1
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Height cannot be 0 or less");
+                    throw new ArgumentException("Height most be a number and cannot be 0 or less");
                 }
                 height = value;
             }
@@ -83,7 +84,7 @@ namespace Exercise3_1
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Weight cannot be 0 or less");
+                    throw new ArgumentException("Weight most be a number and cannot be 0 or less");
                 }
                 weight = value;
             }

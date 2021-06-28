@@ -17,6 +17,7 @@ namespace Exercise3_3
     */
         static void Main()
         {
+            //Lista över olika djur
             List<Animal> animals = new();
             animals.Add(new Horse("Hela", 10, 500, "yes"));
             animals.Add(new Dog("Trollet", 15, 30, "Brown"));
@@ -25,6 +26,8 @@ namespace Exercise3_3
             animals.Add(new Pelican("Rosa", 5, 10, 2, 2));
             animals.Add(new Wolfman("Carn", 35, 90, "No", "Leave before I get hungry"));
 
+            //Skriver ut vilket djur som hanteras och vilket ljud dem gör
+            //Kollar över om djuret är en IPerson och i så fall skriver ut vad den säger istället
             Console.WriteLine("**");
             int i = 0;
             foreach (Animal animal in animals)
@@ -40,31 +43,37 @@ namespace Exercise3_3
                 }
                 i++;
             }
+
+            //En lista över hundar
             List<Dog> dogs = new();
             dogs.Add(new Dog("Mysak", 20, 30, "Black"));
             dogs.Add(new Dog("Winnie", 12, 30, "Blond"));
             dogs.Add(new Dog("Buzan", 13, 30, "Blond"));
 
+            //kod som försöker lägga till en häst i listar över hundar. Fungerar inte.
             //dogs.Add(new Horse("Hela", 10, 500, "yes"));
 
+            //Skriver ut stats för varje djur i listan
             Console.WriteLine("**");
             foreach (Animal animal in animals)
             {
                 Console.WriteLine(animal.Stats());
             }
 
-
+            //Lägger till listan över hundar i den ursprungliga listan
+            //Mest för att se att nästa del fungerar
             foreach (Dog dog in dogs)
             {
                 animals.Add(dog);
             }
+            //Kollar igenom listan animals och för varje djur som är en hund, skrivs stats ut i konsolen
             Console.WriteLine("**");
             foreach (Dog dogs1 in animals.OfType<Dog>())
             {
                 Console.WriteLine(dogs1.Stats());
             }
 
-
+            //Skriver ut den specifika metoden för hundar
             Console.WriteLine("**");
             foreach (Dog dogs1 in animals.OfType<Dog>())
             {

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise3_3
 {
+    //Interface för en IPerson
     interface IPerson
     {
         void Talk();

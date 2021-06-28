@@ -23,6 +23,7 @@ namespace exercise3_4
             PrintUEMessages(userErrors);
         }
 
+        //Skriver ut dem olika UEMessage i en numrerad lista
         private static void PrintUEMessages(List<UserError> userErrors)
         {
             int i = 0;
@@ -33,6 +34,7 @@ namespace exercise3_4
             }
         }
 
+        //Skapar en lista med olika userErrors. Använder primtal för att få en enkel blandning av dem
         private static List<UserError> MakeUserErrorList()
         {
             List<UserError> userErrors = new();

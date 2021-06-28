@@ -10,18 +10,7 @@ namespace Exercise3_1
 
             CodeOutput(age, fName, lName, height, weight);
         }
-
-        private static void CodeOutput(int age, string fName, string lName, double height, double weight)
-        {
-            PersonHandler pers = new();
-            Person person = pers.CreatePerson(age, fName, lName, height, weight);
-            PersonHandler.WriteAge(person);
-            PersonHandler.WriteFName(person);
-            PersonHandler.WriteLName(person);
-            PersonHandler.WriteHeight(person);
-            PersonHandler.WriteWeight(person);
-        }
-
+        //Den här koden skriver i konsolen vilken input som ska lägga till och returerar den
         private static void UserInput(out int age, out string fName, out string lName, out double height, out double weight)
         {
             Console.WriteLine("To Create a Person input: Age, First Name, Last Name, Height and Weight");
@@ -52,6 +41,21 @@ namespace Exercise3_1
                 weightTest = Console.ReadLine();
             }
         }
+        
+        //Den här koden tar inputen från användaren och skappar en "Person" genom "PersonHandler"
+        //och returnerar resultatet när alla exceptions är hanterade
+        private static void CodeOutput(int age, string fName, string lName, double height, double weight)
+        {
+            PersonHandler pers = new();
+            Person person = pers.CreatePerson(age, fName, lName, height, weight);
+            PersonHandler.WriteAge(person);
+            PersonHandler.WriteFName(person);
+            PersonHandler.WriteLName(person);
+            PersonHandler.WriteHeight(person);
+            PersonHandler.WriteWeight(person);
+        }
+
+
         // Nedanför är den första koden för undantagshantering.
         // Den nuvarande koden är i "PersonHandler".
 
