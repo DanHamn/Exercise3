@@ -13,7 +13,7 @@ namespace exercise3_4
                 se vad som är beroende av vad.
         F: Vad är det för en skillnad på en Abstrakt klass och ett Interface?
                 En abstrakt klass visar både på vad alla subklasser minst kommer behöva som input och 
-                vilka metoder som subklasserna kan override.
+                vilka metoder som subklasserna kommer minst ha.
                 Ett interface implementerar ingenting och kan inte användas som den är, utan den är 
                 mer som en ritning som visar på vad som klassen som baseras på interfacet ska ha med*/
         static void Main()

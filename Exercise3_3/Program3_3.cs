@@ -6,12 +6,7 @@ namespace Exercise3_3
 {
     class Program3_3
     {
-        /*F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut,
-     *      i vilken klass bör vi lägga det?
-     *          S: I subklasses "Bird"
-        F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
-                S: I subklassen "Animal"
-        F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+        /*F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
                 S: För det finns inget i koden som kan konvertera mellan dem.
         F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
                 S: Det mest basiska klassen, då man bara kan ta med bas klassen och alla dens subklasser.
