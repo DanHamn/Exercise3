@@ -15,9 +15,7 @@ namespace Exercise3_3
         }
         public override string Stats()
         {
-            string stats = $"Stats for a {GetType().Name}:" + Environment.NewLine +
-                $"Namn: {Name}, Age: {Age}, Weight: {Weight}, Number Of Spikes: {NrOfSpikes}";
-            return stats;
+            return base.Stats() + $", Number of spikes: {NrOfSpikes}";
         }
     }
 

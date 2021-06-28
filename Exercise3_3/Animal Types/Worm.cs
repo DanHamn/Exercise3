@@ -15,10 +15,7 @@ namespace Exercise3_3
         }
         public override string Stats()
         {
-            string stats = $"Stats for a {GetType().Name}.@" +
-                $"Namn: {Name}, Age: {Age}, Weight: {Weight}, Length: {Length}";
-            stats = stats.Replace("@", "@" + Environment.NewLine);
-            return stats;
+            return base.Stats() + $", Length: {Length}cm";
         }
 
     }

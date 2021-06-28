@@ -17,9 +17,7 @@ namespace Exercise3_3
         }
         public override string Stats()
         {
-            string stats = $"Stats for a {GetType().Name}:" + Environment.NewLine +
-                $"Namn: {Name}, Age: {Age}, Weight: {Weight}, Color: {Color}";
-            return stats;
+            return base.Stats() + $", Color: {Color}";
         }
         public void GoodDog()
         {
