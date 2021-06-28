@@ -15,7 +15,7 @@ namespace Exercise3_3
         }
         public override string Stats()
         {
-            return base.Stats() + $", Mouth volume: {MouthVolume}";
+            return base.Stats() + $", Mouth volume: {MouthVolume}L";
         }
     }
 
